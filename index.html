@@ -1,10 +1,11 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mohamed Mohamed Adawy - Financial Analyst</title>
-    <style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Mohamed Mohamed Adawy - Financial Analyst</title>
+<style>
         * {
             margin: 0;
             padding: 0;
@@ -385,165 +386,191 @@
                 grid-template-columns: 1fr;
             }
         }
-    </style>
+    
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+    text-align: left;
+}
+
+.hero-inner {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.hero-photo {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    border: 4px solid #64b5f6;
+    box-shadow: 0 0 25px rgba(100, 181, 246, 0.6);
+    object-fit: cover;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.hero-photo:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 40px rgba(100, 181, 246, 0.9);
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+@media (max-width: 768px) {
+    .hero-inner {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+</style>
 </head>
 <body>
-    <!-- Header -->
-    <header>
-        <nav class="container">
-            <a href="#" class="logo">MA</a>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h1>Mohamed Mohamed Adawy</h1>
-            <p class="subtitle">Aspiring Financial Analyst | Commerce Student | Data Enthusiast</p>
-            <a href="#contact" class="cta-button">Let's Connect</a>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="section about">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <div class="about-stats">
-                    <div class="stat">
-                        <h3>2nd</h3>
-                        <p>Year Student</p>
-                    </div>
-                    <div class="stat">
-                        <h3>Excel</h3>
-                        <p>Learning</p>
-                    </div>
-                    <div class="stat">
-                        <h3>Python</h3>
-                        <p>Learning</p>
-                    </div>
-                    <div class="stat">
-                        <h3>HTML</h3>
-                        <p>Beginner</p>
-                    </div>
-                </div>
-                <div class="about-text">
-                    <p>I'm a dedicated second-year Commerce student at Damanhour University with a passion for financial analysis and data-driven decision making. Currently building my expertise in financial modeling, market analysis, and investment evaluation.</p>
-                    
-                    <p>My academic journey has equipped me with a solid foundation in business principles, while my self-directed learning in Python and Excel has given me practical tools for financial analysis. I'm actively seeking opportunities to apply my analytical skills and contribute to meaningful financial projects.</p>
-
-                    <p>I believe in the power of data to tell compelling stories about market trends and investment opportunities. My goal is to combine traditional financial analysis with modern technological tools to provide valuable insights for businesses and investors.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="section">
-        <div class="container">
-            <h2 class="section-title">Skills & Expertise</h2>
-            <div class="skills-grid">
-                <div class="skill-card">
-                    <div class="skill-icon">📊</div>
-                    <h3>Financial Analysis</h3>
-                    <p>Learning financial modeling, ratio analysis, and performance evaluation techniques</p>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon">📈</div>
-                    <h3>Market Research</h3>
-                    <p>Developing skills in market trend analysis and investment opportunity assessment</p>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon">💻</div>
-                    <h3>Excel & Python</h3>
-                    <p>Learning Excel for data analysis and Python for advanced financial modeling</p>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon">📋</div>
-                    <h3>Risk Assessment</h3>
-                    <p>Understanding risk management principles and portfolio optimization strategies</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="section projects">
-        <div class="container">
-            <h2 class="section-title">Featured Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-header">📈</div>
-                    <div class="project-content">
-                        <h3>Market Analysis Dashboard</h3>
-                        <p>Comprehensive market trend analysis using Excel and financial modeling techniques. This project demonstrates my ability to analyze market data, identify patterns, and present findings in an accessible format.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Excel</span>
-                            <span class="tech-tag">Financial Modeling</span>
-                            <span class="tech-tag">Data Visualization</span>
-                        </div>
-                        <a href="#contact" class="project-link">View Project</a>
-                    </div>
-                </div>
-                
-                <div class="project-card">
-                    <div class="project-header">💰</div>
-                    <div class="project-content">
-                        <h3>Investment Portfolio Analysis</h3>
-                        <p>Detailed analysis of investment opportunities and portfolio optimization strategies. Includes risk assessment, return calculations, and diversification recommendations based on modern portfolio theory.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Portfolio Theory</span>
-                            <span class="tech-tag">Risk Analysis</span>
-                            <span class="tech-tag">Excel</span>
-                        </div>
-                        <a href="#contact" class="project-link">View Project</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="section contact">
-        <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <div class="contact-content">
-                <div class="contact-item">
-                    <div class="contact-icon">📧</div>
-                    <h3>Email</h3>
-                    <a href="mailto:mohamedadawy507@gmail.com">mohamedadawy507@gmail.com</a>
-                </div>
-                
-                <div class="contact-item">
-                    <div class="contact-icon">💼</div>
-                    <h3>LinkedIn</h3>
-                    <a href="https://www.linkedin.com/in/mohamed3adawy" target="_blank">linkedin.com/in/mohamed3adawy</a>
-                </div>
-                
-                <div class="contact-item">
-                    <div class="contact-icon">📱</div>
-                    <h3>Phone</h3>
-                    <a href="tel:+201031097406">+20 103 109 7406</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 Mohamed Mohamed Adawy. All rights reserved.</p>
-        </div>
-    </footer>
-
-    <script>
+<!-- Header -->
+<header>
+<nav class="container">
+<a class="logo" href="#">MA</a>
+<ul class="nav-links">
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+</header>
+<!-- Hero Section -->
+<section class="hero" id="home"><div class="hero-inner"><img class="hero-photo" src="1754072450550.jpg"/><div class="hero-content">
+<h1>Mohamed Mohamed Adawy</h1>
+<p class="subtitle">Aspiring Financial Analyst | Commerce Student | Data Enthusiast</p>
+<a class="cta-button" href="#contact">Let's Connect</a>
+</div></div></section>
+<!-- About Section -->
+<section class="section about" id="about">
+<div class="container">
+<img alt="Damanhour University Logo" src="logo.jpg" style="max-width:150px; margin-bottom:20px; display:block;"/><h2 class="section-title">About Me</h2>
+<div class="about-content">
+<div class="about-stats">
+<div class="stat">
+<h3>2nd</h3>
+<p>Year Student</p>
+</div>
+<div class="stat">
+<h3>Excel</h3>
+<p>Proficient</p>
+</div>
+<div class="stat">
+<h3>Python</h3>
+<p>Learning</p>
+</div>
+<div class="stat">
+<h3>HTML</h3>
+<p>Beginner</p>
+</div>
+</div>
+<div class="about-text">
+<p>I'm a dedicated second-year Commerce student at Damanhour University with a passion for financial analysis and data-driven decision making. Currently building my expertise in financial modeling, market analysis, and investment evaluation.</p>
+<p>My academic journey has equipped me with a solid foundation in business principles, while my self-directed learning in Python and Excel has given me practical tools for financial analysis. I'm actively seeking opportunities to apply my analytical skills and contribute to meaningful financial projects.</p>
+<p>I believe in the power of data to tell compelling stories about market trends and investment opportunities. My goal is to combine traditional financial analysis with modern technological tools to provide valuable insights for businesses and investors.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Skills Section -->
+<section class="section" id="skills">
+<div class="container">
+<h2 class="section-title">Skills &amp; Expertise</h2>
+<div class="skills-grid">
+<div class="skill-card">
+<div class="skill-icon">📊</div>
+<h3>Financial Analysis</h3>
+<p>Learning financial modeling, ratio analysis, and performance evaluation techniques</p>
+</div>
+<div class="skill-card">
+<div class="skill-icon">📈</div>
+<h3>Market Research</h3>
+<p>Developing skills in market trend analysis and investment opportunity assessment</p>
+</div>
+<div class="skill-card">
+<div class="skill-icon">💻</div>
+<h3>Excel &amp; Python</h3>
+<p>Proficient in Excel for data analysis, learning Python for advanced financial modeling</p>
+</div>
+<div class="skill-card">
+<div class="skill-icon">📋</div>
+<h3>Risk Assessment</h3>
+<p>Understanding risk management principles and portfolio optimization strategies</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Projects Section -->
+<section class="section projects" id="projects">
+<div class="container">
+<h2 class="section-title">Featured Projects</h2>
+<div class="projects-grid">
+<div class="project-card">
+<div class="project-header">📈</div>
+<div class="project-content">
+<h3>Market Analysis Dashboard</h3>
+<p>Comprehensive market trend analysis using Excel and financial modeling techniques. This project demonstrates my ability to analyze market data, identify patterns, and present findings in an accessible format.</p>
+<div class="project-tech">
+<span class="tech-tag">Excel</span>
+<span class="tech-tag">Financial Modeling</span>
+<span class="tech-tag">Data Visualization</span>
+</div>
+<a class="project-link" href="#contact">View Project</a>
+</div>
+</div>
+<div class="project-card">
+<div class="project-header">💰</div>
+<div class="project-content">
+<h3>Investment Portfolio Analysis</h3>
+<p>Detailed analysis of investment opportunities and portfolio optimization strategies. Includes risk assessment, return calculations, and diversification recommendations based on modern portfolio theory.</p>
+<div class="project-tech">
+<span class="tech-tag">Portfolio Theory</span>
+<span class="tech-tag">Risk Analysis</span>
+<span class="tech-tag">Excel</span>
+</div>
+<a class="project-link" href="#contact">View Project</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="section contact" id="contact">
+<div class="container">
+<h2 class="section-title">Get In Touch</h2>
+<div class="contact-content">
+<div class="contact-item">
+<div class="contact-icon">📧</div>
+<h3>Email</h3>
+<a href="mailto:mohamedadawy507@gmail.com">mohamedadawy507@gmail.com</a>
+</div>
+<div class="contact-item">
+<div class="contact-icon">💼</div>
+<h3>LinkedIn</h3>
+<a href="https://www.linkedin.com/in/mohamed3adawy" target="_blank">linkedin.com/in/mohamed3adawy</a>
+</div>
+<div class="contact-item">
+<div class="contact-icon">📱</div>
+<h3>Phone</h3>
+<a href="tel:+201031097406">+20 103 109 7406</a>
+</div>
+<div class="contact-item"><div class="contact-icon">🎯</div><h3>Fiverr</h3><a href="https://www.fiverr.com/s/qD0apDV" target="_blank">Visit my Fiverr Profile</a></div><div class="contact-item"><div class="contact-icon">🌍</div><h3>Upwork</h3><a href="https://www.upwork.com/freelancers/~01027bcc714d0015de?mp_source=share" target="_blank">Visit my Upwork Profile</a></div></div>
+</div>
+</section>
+<!-- Footer -->
+<footer>
+<div class="container">
+<p>© 2025 Mohamed Mohamed Adawy. All rights reserved.</p>
+</div>
+</footer>
+<script>
         // Smooth scrolling for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
